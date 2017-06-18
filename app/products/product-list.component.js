@@ -65,7 +65,7 @@ var ProductListComponent = (function () {
             }
         ];
         this.showImage = false;
-        this.buttonText = "Show Image";
+        this.listFilter = 'cart';
     }
     ProductListComponent.prototype.toggleImage = function () {
         this.showImage = !this.showImage;

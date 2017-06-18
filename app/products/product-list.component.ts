@@ -62,7 +62,7 @@ export class ProductListComponent{
             }
         ];
     showImage : boolean = false;
-    buttonText : string = "Show Image";
+    listFilter : string = 'cart';
 
     toggleImage(): void{
         this.showImage = !this.showImage;
