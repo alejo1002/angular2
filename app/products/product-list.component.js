@@ -64,7 +64,13 @@ var ProductListComponent = (function () {
                 "imageUrl": "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png"
             }
         ];
+        this.showImage = false;
+        this.buttonText = "Show Image";
     }
+    ProductListComponent.prototype.toggleImage = function () {
+        this.showImage = !this.showImage;
+    };
+    ;
     return ProductListComponent;
 }());
 ProductListComponent = __decorate([
