@@ -4,9 +4,13 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent }  from './app.component';
+import { WelcomeComponent } from './home/welcome.component';
+
 import {ProductListComponent} from './products/product-list.component';
 import {ProductFilterPipe} from './products/product-filter.pipe';
 import {StarComponent} from './shared/star.component';
+
+import {ProductDetailComponent} from './products/product-detail.component';
 
 @NgModule({
   imports: [ 
@@ -15,8 +19,10 @@ import {StarComponent} from './shared/star.component';
     HttpModule
     ],
   declarations: [ 
-    AppComponent ,
+    AppComponent,
+    WelcomeComponent,
     ProductListComponent,
+    ProductDetailComponent,
     ProductFilterPipe,
     StarComponent],
   bootstrap: [ AppComponent ]
